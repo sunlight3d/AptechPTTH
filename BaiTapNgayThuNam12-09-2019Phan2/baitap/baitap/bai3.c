@@ -13,7 +13,7 @@
  decimal) and inches (floating, 1 decimal), with feet and the inches given to an
  accuracy of one decimal place.
  */
-int main(int argc, const char * argv[]) {
+int main3(int argc, const char * argv[]) {
     float feet;
     float inches, cm;
     printf("Enter number (cm): ");

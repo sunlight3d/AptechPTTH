@@ -10,6 +10,7 @@
 		AD6455C8232EF18A00C7811F /* bai1.c in Sources */ = {isa = PBXBuildFile; fileRef = AD6455C7232EF18A00C7811F /* bai1.c */; };
 		AD6455CF232EF1CA00C7811F /* bai2.c in Sources */ = {isa = PBXBuildFile; fileRef = AD6455CE232EF1CA00C7811F /* bai2.c */; };
 		AD6455D1232EF63C00C7811F /* bai3.c in Sources */ = {isa = PBXBuildFile; fileRef = AD6455D0232EF63C00C7811F /* bai3.c */; };
+		AD6455D4232EFA0300C7811F /* bai4.c in Sources */ = {isa = PBXBuildFile; fileRef = AD6455D2232EFA0300C7811F /* bai4.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		AD6455C7232EF18A00C7811F /* bai1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai1.c; sourceTree = "<group>"; };
 		AD6455CE232EF1CA00C7811F /* bai2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai2.c; sourceTree = "<group>"; };
 		AD6455D0232EF63C00C7811F /* bai3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai3.c; sourceTree = "<group>"; };
+		AD6455D2232EFA0300C7811F /* bai4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai4.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				AD6455C7232EF18A00C7811F /* bai1.c */,
 				AD6455CE232EF1CA00C7811F /* bai2.c */,
 				AD6455D0232EF63C00C7811F /* bai3.c */,
+				AD6455D2232EFA0300C7811F /* bai4.c */,
 			);
 			path = baitap;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 				AD6455C8232EF18A00C7811F /* bai1.c in Sources */,
 				AD6455CF232EF1CA00C7811F /* bai2.c in Sources */,
 				AD6455D1232EF63C00C7811F /* bai3.c in Sources */,
+				AD6455D4232EFA0300C7811F /* bai4.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
