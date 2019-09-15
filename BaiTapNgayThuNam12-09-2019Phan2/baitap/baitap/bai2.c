@@ -12,7 +12,7 @@
  be printed only if it is less than 2000 or greater than 3000, and number y should
  be printed only if it is between 100 and 500.
  */
-int main1(int argc, const char * argv[]) {
+int main2(int argc, const char * argv[]) {
     int x , y;
     printf("Nhap X(X nho hon 2000 hoac lon hon 3000): \n");
     scanf("%d", &x);

@@ -11,7 +11,7 @@
  1.Write a program to accept 2 numbers and tell whether the product(tích) of the two
  numbers is equal to or greater than 1000.
  */
-int main(int argc, const char * argv[]) {
+int main1(int argc, const char * argv[]) {
     int x,y;
     printf("Nhap x:"); scanf("%d",&x);
     printf("Nhap y:"); scanf("%d",&y);
