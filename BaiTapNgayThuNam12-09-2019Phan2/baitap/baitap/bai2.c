@@ -7,14 +7,21 @@
 //
 
 #include <stdio.h>
-
-int main(int argc, const char * argv[]) {
+/*
+ 2.Declare two variables x and y. Assign values to these variables. Number x should
+ be printed only if it is less than 2000 or greater than 3000, and number y should
+ be printed only if it is between 100 and 500.
+ */
+int main1(int argc, const char * argv[]) {
     int x , y;
     printf("Nhap X(X nho hon 2000 hoac lon hon 3000): \n");
     scanf("%d", &x);
     printf("Y trong khoang 100 den 500):: \n");
     scanf("%d", &y);
-    
+    /*Có thể gán 2 giá trị(ko cần %f):
+     x = 2100;
+     y = 122
+     */
     if(x < 2000 || x > 3000 ){
         printf("\n x = %d" , x);
     }else{
