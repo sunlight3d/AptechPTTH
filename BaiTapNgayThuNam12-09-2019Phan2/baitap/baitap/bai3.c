@@ -21,7 +21,7 @@ int main3(int argc, const char * argv[]) {
     
     inches = cm / 2.54;
     feet = inches / 12.0;
-    printf("%0.3f centimeters is %0.3f feet\n", cm, feet);
-    printf("%0.3f centimeters is %0.3f inches\n", cm, inches);
+    printf("%0.3f centimeters is %0.1f feet\n", cm, feet);
+    printf("%0.3f centimeters is %0.1f inches\n", cm, inches);
     return 0;
 }
