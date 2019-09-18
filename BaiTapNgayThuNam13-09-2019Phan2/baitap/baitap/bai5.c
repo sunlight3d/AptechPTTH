@@ -24,5 +24,22 @@ int main5(int argc, const char * argv[]) {
     } else {
         printf("Ko phải là các phép +, -, *, /");
     }
+    /*
+     Cach 2:
+     switch(ch) {
+     case '+':
+        printf("day la phep cong");
+        break;
+     case '-':
+        printf("day la phep tru");
+        break;
+     case '*':
+        printf("day la phep nhan");
+        break;
+     case '/':
+        printf("day la phep chia");
+        break;
+     }
+     */
     return 0;
 }
