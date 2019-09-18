@@ -29,6 +29,8 @@ int main4(int argc, const char * argv[]) {
         printf("grade D, ko duoc thuong\n");
     } else if(marks < 35) {
         printf("grade E, ko duoc thuong\n");
+    } else if(marks > 100 || marks < 0) {
+        printf("Diem ko hop le \n");
     }
     return 0;
 }
