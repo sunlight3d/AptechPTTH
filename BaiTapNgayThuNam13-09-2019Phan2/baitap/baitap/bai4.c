@@ -16,11 +16,19 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
+int main4(int argc, const char * argv[]) {
     int marks;
-    printf("Nhap so tien thuong: "); scanf("%d", &marks);
-    if(marks > 75) {
-        
+    printf("Nhap diem thanh tich: "); scanf("%d", &marks);
+    if(marks >= 75) {
+        printf("grade A, thuong 300K\n");
+    } else if(marks >= 60 && marks < 75) {
+        printf("grade B, thuong 250K\n");
+    } else if(marks >= 45 && marks < 60) {
+        printf("grade C, ko duoc thuong");
+    } else if(marks >= 35 && marks < 45) {
+        printf("grade D, ko duoc thuong\n");
+    } else if(marks < 35) {
+        printf("grade E, ko duoc thuong\n");
     }
     return 0;
 }

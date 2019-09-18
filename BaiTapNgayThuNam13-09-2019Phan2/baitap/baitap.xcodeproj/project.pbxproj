@@ -10,6 +10,9 @@
 		AD6C8BC72331436500C3804E /* bai2.c in Sources */ = {isa = PBXBuildFile; fileRef = AD6C8BC62331436500C3804E /* bai2.c */; };
 		AD6C8BC92331446800C3804E /* bai4.c in Sources */ = {isa = PBXBuildFile; fileRef = AD6C8BC82331446800C3804E /* bai4.c */; };
 		AD947F7523311C67008994B8 /* bai1.c in Sources */ = {isa = PBXBuildFile; fileRef = AD947F7423311C67008994B8 /* bai1.c */; };
+		FA36B0D62332138F00450A69 /* bai7.c in Sources */ = {isa = PBXBuildFile; fileRef = FA36B0D52332138F00450A69 /* bai7.c */; };
+		FA4A8B7E2331E81900D83857 /* bai5.c in Sources */ = {isa = PBXBuildFile; fileRef = FA4A8B7D2331E81900D83857 /* bai5.c */; };
+		FA4A8B802331EB7500D83857 /* bai6.c in Sources */ = {isa = PBXBuildFile; fileRef = FA4A8B7F2331EB7500D83857 /* bai6.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +32,9 @@
 		AD6C8BC82331446800C3804E /* bai4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai4.c; sourceTree = "<group>"; };
 		AD947F7123311C67008994B8 /* baitap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = baitap; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD947F7423311C67008994B8 /* bai1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai1.c; sourceTree = "<group>"; };
+		FA36B0D52332138F00450A69 /* bai7.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai7.c; sourceTree = "<group>"; };
+		FA4A8B7D2331E81900D83857 /* bai5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bai5.c; sourceTree = "<group>"; };
+		FA4A8B7F2331EB7500D83857 /* bai6.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bai6.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 				AD947F7423311C67008994B8 /* bai1.c */,
 				AD6C8BC62331436500C3804E /* bai2.c */,
 				AD6C8BC82331446800C3804E /* bai4.c */,
+				FA4A8B7D2331E81900D83857 /* bai5.c */,
+				FA4A8B7F2331EB7500D83857 /* bai6.c */,
+				FA36B0D52332138F00450A69 /* bai7.c */,
 			);
 			path = baitap;
 			sourceTree = "<group>";
@@ -124,8 +133,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4A8B802331EB7500D83857 /* bai6.c in Sources */,
+				FA4A8B7E2331E81900D83857 /* bai5.c in Sources */,
 				AD947F7523311C67008994B8 /* bai1.c in Sources */,
 				AD6C8BC72331436500C3804E /* bai2.c in Sources */,
+				FA36B0D62332138F00450A69 /* bai7.c in Sources */,
 				AD6C8BC92331446800C3804E /* bai4.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
