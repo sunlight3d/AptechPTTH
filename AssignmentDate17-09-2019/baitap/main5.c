@@ -13,7 +13,7 @@ printf(“\t%d”, count);
 printf(“\nCtrl-C will help”);
 }
 */
-int main(int argc, char *argv[]) {
+int main5(int argc, char *argv[]) {
 	int count = 0;//Khai bao bien nguyen count
 	while(count < 100) {
 		//Neu count < 100 thi nhay vao day
