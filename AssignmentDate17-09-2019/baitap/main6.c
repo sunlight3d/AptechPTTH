@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
     do {
         printf("\nEnter a number (1) :");
         scanf("%d",&num);
-    }while (num != 16);
+    }while (num != 1);
     printf("All done...");
     return 0;
 }
