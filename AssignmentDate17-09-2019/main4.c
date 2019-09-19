@@ -12,7 +12,7 @@ break;
 }
 }
 */
-int main(int argc, char *argv[]) {
+int main4(int argc, char *argv[]) {
 	char i; //khai bai bien i kieu character
 	for( ; ; ) {
 		//Vong lap vo tan(chay mai)
