@@ -10,7 +10,7 @@
 /*
  Bài 3
  Các phát biểu sau là đúng hay sai:
- C is case sensitive. => False
+ C is case sensitive. => True
  The first character of the identifier can be a number. => False
  Variable's name can contain space character. => False
  Variable's name can be Uppercase => True
