@@ -5,7 +5,7 @@
 */
 int main1(int argc, char *argv[]) {
 	double x1, x2, x3, x4, max;
-	printf("x1 = "); scanf("%lf", &x1);
+	printf("x1 = "); scanf("%lf", &x1); //lf = long float
 	printf("x2 = "); scanf("%lf", &x2);
 	printf("x3 = "); scanf("%lf", &x3);
 	printf("x4 = "); scanf("%lf", &x4);
