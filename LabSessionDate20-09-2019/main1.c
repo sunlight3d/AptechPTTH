@@ -9,7 +9,7 @@ Enter your name: Nguyen Van A
 Enter your age: 98
 Hi?n 98 l?n ch?: Nguyen Van A, m?i ch? 1 dòng
 */
-int main(int argc, char *argv[]) {
+int main1(int argc, char *argv[]) {
 	//Dau vao, ten va tuoi
 	char name[100];//maximum 100 characters
 	unsigned int age;//unsigned = positive(>0)
