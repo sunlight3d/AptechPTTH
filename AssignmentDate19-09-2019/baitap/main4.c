@@ -5,7 +5,7 @@
  4.Viết chương trình nhập vào N số nguyên, tìm số nhỏ nhất
  */
 
-int main(int argc, char *argv[]) {
+int main4(int argc, char *argv[]) {
     int i, N;
     int min;
     int x;

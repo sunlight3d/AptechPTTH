@@ -11,6 +11,7 @@
 		AD3A06122336634A007C3B97 /* main1.c in Sources */ = {isa = PBXBuildFile; fileRef = AD3A06112336634A007C3B97 /* main1.c */; };
 		AD71E364233690010044F664 /* main3.c in Sources */ = {isa = PBXBuildFile; fileRef = AD71E363233690010044F664 /* main3.c */; };
 		AD71E366233691110044F664 /* main4.c in Sources */ = {isa = PBXBuildFile; fileRef = AD71E365233691110044F664 /* main4.c */; };
+		AD71E368233692870044F664 /* main5.c in Sources */ = {isa = PBXBuildFile; fileRef = AD71E367233692870044F664 /* main5.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 		AD3A06112336634A007C3B97 /* main1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main1.c; sourceTree = "<group>"; };
 		AD71E363233690010044F664 /* main3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main3.c; sourceTree = "<group>"; };
 		AD71E365233691110044F664 /* main4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main4.c; sourceTree = "<group>"; };
+		AD71E367233692870044F664 /* main5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main5.c; sourceTree = "<group>"; };
 		AD947F7123311C67008994B8 /* baitap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = baitap; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				AD3A060F23366332007C3B97 /* main2.c */,
 				AD71E363233690010044F664 /* main3.c */,
 				AD71E365233691110044F664 /* main4.c */,
+				AD71E367233692870044F664 /* main5.c */,
 			);
 			path = baitap;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			files = (
 				AD71E364233690010044F664 /* main3.c in Sources */,
 				AD71E366233691110044F664 /* main4.c in Sources */,
+				AD71E368233692870044F664 /* main5.c in Sources */,
 				AD3A06122336634A007C3B97 /* main1.c in Sources */,
 				AD3A061023366332007C3B97 /* main2.c in Sources */,
 			);
