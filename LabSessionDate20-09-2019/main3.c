@@ -16,9 +16,9 @@ int main(int argc, char *argv[]) {
 	//Input: N
 	int N, rows, columns;
 	printf("Enter N ="); scanf("%d", &N);
-	for(rows = 0; rows < 10; rows++){
-		int multiply = N * (rows + 1);
-		printf("%d x %d = %d\n",N, rows + 1, multiply);
+	for(rows = 1; rows <= 10; rows++){
+		int multiply = N * rows;
+		printf("%d x %d = %d\n",N, rows, multiply);
 	}
 	
 	return 0;

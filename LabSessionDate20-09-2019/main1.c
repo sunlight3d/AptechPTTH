@@ -17,7 +17,7 @@ int main1(int argc, char *argv[]) {
 	printf("Nhap ten:"); gets(name);//gets = GET a String from your Keyboard
 	printf("Nhap tuoi: "); scanf("%d", &age);
 	for(i = 0; i < age;i++) {
-		printf("%d. %s\n", i+1, name);//%s = string
+		printf("%d - %s\n", i+1, name);//%s = string
 	}
 	return 0;
 }
