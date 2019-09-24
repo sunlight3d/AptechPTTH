@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 	}
 	//Find max value in an the array
 	highest = x[0];
-	for(i = 1; i < 4; i++){
+	for(i = 1; i < 4; i++){ //i = index, iterator
 		if(x[i] > highest) {
 			highest = x[i];
 		}
@@ -23,12 +23,13 @@ int main(int argc, char *argv[]) {
 	//Find total values of the array
 	total = 0;
 	int numberOfItems;
-	for(i = 0; i < 4; i++){
-		total += x[i];
+	for(i = 0; i < 4; i++){ //i = index
+		total += x[i];// total = total + x[i];
 	}
-	numberOfItems = i + 1;
+	//printf("i bay gio la : %d", i);
+	numberOfItems = i;
 	printf("total values : %d\n", total);
 	//Calculate average 
-	printf("Average = %d\n", (float)total/(float)numberOfItems);
+	printf("Average = %0.2f\n", (float)total/(float)numberOfItems);
 	return 0;
 }
