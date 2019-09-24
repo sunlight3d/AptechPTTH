@@ -16,11 +16,16 @@ int main(int argc, char** argv) {
 	printf("Enter a string : "); gets(name);
 	//strlen = string's length
 	for(i = 0; i < strlen(name); i++) {
-		if(name[i] == 'a' || name[i] == 'e' || name[i] == 'i' ||
-			name[i] == 'o'|| name[i] == 'u'){
+		if(name[i] == 'a' || name[i] == 'A'  ||
+			name[i] == 'e' || name[i] == 'E' ||
+			name[i] == 'i' || name[i] == 'I' ||
+			name[i] == 'o'|| name[i] == 'O' ||
+			name[i] == 'u' || name[i] == 'U'){
 			numberOfVowels++;
+			printf("vowel: %c\n", name[i]);
 		} else {
 			numberOfConsonants++;
+			printf("Consonant: %c\n", name[i]);
 		}
 	}
 	printf("Number of vowels: %d, \nnumber of consonants : %d\n", 

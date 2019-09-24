@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	//Example2: 
 	char name1[50];
 	char name2[50];
-	strcpy(name1, "Hoang");
+	strcpy(name1, "Hoang"); //string copy = strcpy
 	strcpy(name2, "An");
 	printf("\nname1 = %s, name2 = %s", name1, name2);
 	char strtemp[50];
