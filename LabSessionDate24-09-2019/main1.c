@@ -4,7 +4,7 @@
 /*
 1.Write a C program to find the minimum and the maximum value in an array.
 */
-int main(int argc, char** argv) {
+int main1(int argc, char** argv) {
 	//Input N numbers(int, float) from your Keyboard
 	int N, numbers[20],i;
 	int max, min;
