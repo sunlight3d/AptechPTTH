@@ -12,7 +12,7 @@ Tim
 William
 */
 
-int main(int argc, char *argv[]) {
+int main1(int argc, char *argv[]) {
 	//Initialize array
 	char name[7][10];
 	int i, j;
