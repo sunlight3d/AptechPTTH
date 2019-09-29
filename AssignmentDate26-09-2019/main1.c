@@ -1,17 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 /*
-1.Vi?t chuong trình nh?p vào 1 string 
-và ki?m tra xem dó có ph?i là tring d?i x?ng không?
+1.Enter a string
+then check if it is a Palindrome,
+
 */
 int main(int argc, char *argv[]) {
 	char *name;
 	name = (char *)malloc(50 * sizeof(char));
 	printf("Input name: "); gets(name);
-	int length = strlen(name);
-	int i;
-	for(i = 0; i < length/2; i++) {
-		
-	}
+	char *startPointer, *endPointer; 
+  
+    endPointer = name; 
+    while (*endPointer != '\0') { 
+        ++endPointer; 
+    } 
+    --endPointer; 
+    bool isPalindrome = true;
+    for (startPointer = name; endPointer >= startPointer;) { 
+        if (*endPointer == *startPointer) { 
+            --endPointer; 
+            startPointer++; 
+        } 
+        else {
+            isPalindrome = false;
+            break; 
+        }
+    } 
+  
+    if (isPalindrome == true){
+        printf("%s is Palindrome", name); 
+    }         
+    else {
+        printf("%s is NOT a Palindrome", name); 
+    }
 	return 0;
+        
 }
