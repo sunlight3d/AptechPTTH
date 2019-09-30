@@ -11,6 +11,7 @@
 		FA02EAF52341DB9400183E19 /* main3.c in Sources */ = {isa = PBXBuildFile; fileRef = FA02EAF12341DB9400183E19 /* main3.c */; };
 		FA02EAF62341DB9400183E19 /* main1.c in Sources */ = {isa = PBXBuildFile; fileRef = FA02EAF22341DB9400183E19 /* main1.c */; };
 		FA02EAF72341DB9400183E19 /* main4.c in Sources */ = {isa = PBXBuildFile; fileRef = FA02EAF32341DB9400183E19 /* main4.c */; };
+		FA02EAF92341FE0D00183E19 /* main5.c in Sources */ = {isa = PBXBuildFile; fileRef = FA02EAF82341FE0D00183E19 /* main5.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		FA02EAF12341DB9400183E19 /* main3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main3.c; sourceTree = SOURCE_ROOT; };
 		FA02EAF22341DB9400183E19 /* main1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main1.c; sourceTree = SOURCE_ROOT; };
 		FA02EAF32341DB9400183E19 /* main4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main4.c; sourceTree = SOURCE_ROOT; };
+		FA02EAF82341FE0D00183E19 /* main5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main5.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				FA02EAF02341DB9400183E19 /* main2.c */,
 				FA02EAF12341DB9400183E19 /* main3.c */,
 				FA02EAF32341DB9400183E19 /* main4.c */,
+				FA02EAF82341FE0D00183E19 /* main5.c */,
 			);
 			path = baitap;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			files = (
 				FA02EAF62341DB9400183E19 /* main1.c in Sources */,
 				FA02EAF72341DB9400183E19 /* main4.c in Sources */,
+				FA02EAF92341FE0D00183E19 /* main5.c in Sources */,
 				FA02EAF52341DB9400183E19 /* main3.c in Sources */,
 				FA02EAF42341DB9400183E19 /* main2.c in Sources */,
 			);

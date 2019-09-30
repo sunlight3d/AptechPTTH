@@ -5,7 +5,7 @@
 /*
 4. Noi 2 string 
 */
-int main(int argc, char *argv[]) {
+int main4(int argc, char *argv[]) {
 	char *s1, *s2, *s3;
 	s1 = (char *)malloc(100 * sizeof(char *));
 	s2 = (char *)malloc(100 * sizeof(char *));
