@@ -1,22 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 /*
 1.Enter a string
 then check if it is a Palindrome,
 
 */
-int main(int argc, char *argv[]) {
+int main1(int argc, char *argv[]) {
 	char *name;
 	name = (char *)malloc(50 * sizeof(char));
 	printf("Input name: "); gets(name);
 	char *startPointer, *endPointer; 
   
     endPointer = name; 
-    while (*endPointer != '\0') { 
+    while (*endPointer == '\0') { 
         ++endPointer; 
     } 
     --endPointer; 
+    
     bool isPalindrome = true;
     for (startPointer = name; endPointer >= startPointer;) { 
         if (*endPointer == *startPointer) { 
@@ -35,6 +37,7 @@ int main(int argc, char *argv[]) {
     else {
         printf("%s is NOT a Palindrome", name); 
     }
+    
 	return 0;
         
 }
