@@ -3,33 +3,27 @@
 #include <stdbool.h>
 #include <string.h>
 /*
-1.Enter a string
-then check if it is a Palindrome,
--chua lam duoc, se post sau
+2. Nhap 1 mang cac string
 */
+<<<<<<< HEAD
 int main(int argc, char *argv[]) {
 	char **animals;
 	char *startPointer;
 	int M,N, i,j;
+=======
+int main2(int argc, char *argv[]) {
+	char **animals; //array of array
+	int M,N, i;
+>>>>>>> 03be5d1abf4be2e6a98917eff97e27128ab93e8d
 	M = 3; //10 animals
 	N = 100; //animal's name length
-	animals = (char *)malloc(M * N * sizeof(char *));
-	startPointer = animals;
+	animals = malloc(M * sizeof(char *));
 	for(i =0; i < M; i++) {
-		//*animals = (char *)malloc(N * sizeof(char *));
-		char eachAnimal[100];
-		printf("Nhap animal: "); gets(eachAnimal);
-		j = 0;
-		while(eachAnimal[j] != '\0') {
-			animals++;
-			j++;			
-		}
-		
-		animals++;
+		*(animals + i) = (char *)malloc(N * sizeof(char *));
+        printf("Enter animal's name : ");gets(*(animals + i));		
 	}
 	for(i =0; i < M; i++) {
-		printf("%s\n", *(animals + i*N));
-		startPointer ++;
+		printf("%s\n", *(animals + i));		
 	}
 	return 0;
 }
