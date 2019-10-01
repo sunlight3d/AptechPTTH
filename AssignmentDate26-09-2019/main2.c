@@ -7,7 +7,7 @@
 then check if it is a Palindrome,
 -chua lam duoc, se post sau
 */
-int main2(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	char **animals;
 	char *startPointer;
 	int M,N, i,j;

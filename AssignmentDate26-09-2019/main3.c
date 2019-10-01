@@ -5,7 +5,7 @@
 /*
 3. Sap xep 1 day so thuc
 */
-int main(int argc, char *argv[]) {
+int main3(int argc, char *argv[]) {
 	float *numbers;
 	int N, i, j;
 	printf("Nhap N = "); scanf("%d", &N);
