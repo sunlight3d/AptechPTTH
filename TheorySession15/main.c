@@ -21,7 +21,7 @@ int sum(int x, int y) {
 	return temp; //Gia tri cua ham la temp
 }
 //Ham ko co tham so(no-args), ko co gia tri tra ve
-void saySomething(int z) { //void => ko co return
+void saySomething() { //void => ko co return
 	printf("hello, how are you ?\n");
 	printf("haha");
 }
