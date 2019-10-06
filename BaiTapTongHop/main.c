@@ -150,21 +150,45 @@ void insertCategoryAnalyze(struct CategoryAnalyze *categoryAnalyze, char categor
 		strcpy((*endPoint).category, category);				
 		struct CategoryAnalyze *ptr;
 		for (ptr = categoryAnalyze; (*ptr).name != NULL ; ptr++){}
-		ptr = endPoint;	
-	}
-	
-	
-	
+		ptr = endPoint;	//phan tu cuoi cung tro den doi tuong endPoint
+
+	}	
 }
 
 void analyze(struct Product *product) {
-	for(i = 0; i < N; i++) {
+	Product *ptr;
+	CategoryAnalyze *categoryAnalyze;
+	for (ptr = product; (*ptr).name != NULL ; ptr++){
+		insertCategoryAnalyze(categoryAnalyze, (*ptr).name);
+	}
+	//In thong tin sau khi phan tich
+	CategoryAnalyze *ptr2;
+	for (ptr2 = categoryAnalyze; (*ptr2).category != NULL ; ptr2++){
+		printf("There are %d Product(s) of %s. \n", (*ptr2).numberOfProducts, (*ptr2).category);
+	}
+}
+void find(struct Product *product) {
+	char category[];
+	float maxPrice, minPrice;
+	printf("Category : \n"); scanf("%s", category);
+	printf("Min price($) : "); scanf("%d", &minPrice);
+	printf("Max price($) : "); scanf("%d", &maxPrice);
+	//Mang chua danh sach ket qua tim duoc
+	struct Product *productResult;
+	struct Product *ptr;
+	for (ptr = product; (*ptr).name != NULL ; ptr++){
+		if(strcmp((*ptr).category, category) == 0 
+			&& (*ptr).price >= minPrice && (*ptr).price <= maxPrice) {
+			productResult = product;
+			productResult++;
+		}
+	}
+	//In ket qua ra man hinh
+	for (ptr = productResult; (*ptr).name != NULL ; ptr++){
 		
-	}	
+	}
 }
-void find() {
-	
-}
+
 void save() {
 
 }
