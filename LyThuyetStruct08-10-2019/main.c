@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
  //VD1: tao ra mot struct Mobile
 struct Mobile {
     char name[200];
@@ -23,7 +24,8 @@ int main(int argc, char * argv[]) {
     //Nhan ban 1 doi tuong
     struct Mobile phone2;
     phone2 = phone1; //phone2 giong het phone1
-    memcpy( & phone2, & phone1, sizeof(struct Mobile)); //copy phone1, paste to phone2
+    memcpy(&phone2, &phone1, sizeof(struct Mobile));
+    //copy phone1, paste to phone2
 
     printf("Ten dien thoai phone2 la : %s\n", phone2.name);
     //Thay doi 1 thuoc tinh cua phone1
@@ -39,7 +41,7 @@ int main(int argc, char * argv[]) {
     printf("Nhap nam sx : ");
     scanf("%d", &((*phone).year));
     //In ra man hinh
-    printf("Ten san pham : %s, nam san xuat: %d",
+    printf("Ten san pham : %s, nam san xuat: %d\n",
             (*phone).name, (*phone).year);
     return 0;
 }
