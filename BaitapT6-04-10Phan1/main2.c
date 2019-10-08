@@ -9,3 +9,4 @@ int main(int argc, char const *argv[]) {
 	*p=4;
 	return 0;
 }
+
