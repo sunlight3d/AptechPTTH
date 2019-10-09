@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/* BAI NAY CHUA XONG...*/
 struct Person {
     char name[100];
     unsigned int age;
@@ -21,29 +21,36 @@ struct Person *input(){
     return Person;
 }
 void save(struct Person *person){
-	int i, j;
-    char fileName[200];
+    char fileName[100];
+    char filePath[250];
     printf("Enter file name : "); scanf("%s", fileName);
-    FILE *file = fopen(".\\test.bin","wb"); // w for write, b for binary
-    fwrite(person, sizeof(struct Person *), 1, file);
+    strcat(filePath, "/Users/hoangnd/Documents/tutorials/AptechPTTH/");
+    strcat(filePath, fileName);
+    FILE *file = fopen(filePath,"wb"); // w for write, b for binary
+    if (!file) {
+        printf("Cannot open file %s\n", fileName);
+        exit(1);
+    } else {
+        fwrite(person, sizeof(struct Person *), N, file);
+    }
+    fclose(file);
+    printf("Save finished\n");
+}
+void display(struct Person *person) {
+    char fileName[100];
+    char filePath[250];
+    printf("Enter file name to open : "); scanf("%s", fileName);
+    strcat(filePath, "/Users/hoangnd/Documents/tutorials/AptechPTTH/");
+    strcat(filePath, fileName);
+    FILE *file = fopen(filePath,"rb"); // w for write, b for binary
     
     if (!file) {
         printf("Cannot open file %s\n", fileName);
         exit(1);
     } else {
-        fwrite(person, sizeof(struct Person *), 1, file);
+        fread(person, sizeof(struct Person), N, file);
     }
     fclose(file);
-    char* path = realpath(".\\test.bin", NULL);
-    printf("Save finished\n");
-}
-void display(struct Person *Person) {
-    int i;
-    for(i = 0; i < N; i++){
-        printf("Person's name : %s\n", (*(Person+i)).name);
-        printf("Person's age : %d\n", (*(Person+i)).age);
-        printf("Person's job : %s\n", (*(Person+i)).job);
-    }
 }
 
 int main(int argc, char * argv[]) {
@@ -78,3 +85,4 @@ int main(int argc, char * argv[]) {
     }
     return 0;
 }
+
