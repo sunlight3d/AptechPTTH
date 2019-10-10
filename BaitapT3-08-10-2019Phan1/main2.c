@@ -24,7 +24,8 @@ void save(struct Person *person){
     char fileName[100];
     char filePath[250];
     printf("Enter file name : "); scanf("%s", fileName);
-    strcat(filePath, "/Users/hoangnd/Documents/tutorials/AptechPTTH/");
+    //strcat(filePath, "/Users/hoangnd/Documents/tutorials/AptechPTTH/"); //MacOS+Linux
+    strcat(filePath, "D:\\");//Windows
     strcat(filePath, fileName);
     FILE *file = fopen(filePath,"wb"); // w for write, b for binary
     if (!file) {
@@ -37,10 +38,20 @@ void save(struct Person *person){
     printf("Save finished\n");
 }
 void display(struct Person *person) {
+    int i;
+    for(i = 0; i < N; i++){
+        printf("Person's name : %s\n", (*(person+i)).name);
+        printf("Person's age : %d\n", (*(person+i)).age);
+        printf("Person's job : %s\n", (*(person+i)).job);
+    }
+}
+
+void openFile(struct Person *person) {
     char fileName[100];
     char filePath[250];
     printf("Enter file name to open : "); scanf("%s", fileName);
-    strcat(filePath, "/Users/hoangnd/Documents/tutorials/AptechPTTH/");
+    //strcat(filePath, "/Users/hoangnd/Documents/tutorials/AptechPTTH/"); //MacOS+Linux
+    strcat(filePath, "D:\\");//Windows
     strcat(filePath, fileName);
     FILE *file = fopen(filePath,"rb"); // w for write, b for binary
     
@@ -74,6 +85,7 @@ int main(int argc, char * argv[]) {
             goto LABEL1;
             break;
         case '3':
+            openFile(person);
             display(person);
             goto LABEL1;
             break;
