@@ -70,7 +70,7 @@ int main(int argc, char * argv[]) {
     printf("+ 1.Input some Persons  2.Save to file  3.Open  4.Exit. +\n");
     printf("+-------------------------------------------------------+\n");
     struct Person *person = NULL;
-    char choice;
+    char choice;        
     LABEL1: printf("Enter your choice : "); choice = getchar();
     while (choice == '\n') {
         choice = getchar();
