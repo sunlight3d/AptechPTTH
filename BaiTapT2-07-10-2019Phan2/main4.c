@@ -47,7 +47,7 @@ void display(struct Product *product) {
 }
 void find(struct Product *product) {
     printf("Find some products \n");
-    struct Product *productResults = (struct Product *)malloc(sizeof(struct Product));
+    struct Product *productResults = (struct Product *)malloc(N * sizeof(struct Product));
     struct Product *ptr;
     int i = 0;
     float maxPrice, minPrice;
@@ -60,7 +60,6 @@ void find(struct Product *product) {
     for(i = 0; i < N; i++){
         if(strcmp((*(product+i)).manufacture, manufacture) == 0 &&
            (*(product+i)).price >= minPrice && (*(product+i)).price <= maxPrice ){
-            ptr = (struct Product *)malloc(sizeof(struct Product));
             *ptr = *(product+i);
             ptr++;
             j++;
