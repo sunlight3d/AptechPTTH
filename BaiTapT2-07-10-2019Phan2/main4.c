@@ -61,16 +61,17 @@ void find(struct Product *product) {
         if(strcmp((*(product+i)).manufacture, manufacture) == 0 &&
            (*(product+i)).price >= minPrice && (*(product+i)).price <= maxPrice ){
             ptr = (struct Product *)malloc(sizeof(struct Product));
+            *ptr = *(product+i);
             ptr++;
             j++;
         }
     }
     printf("Search result : \n");
     for(i = 0; i < j; i++){
-        printf("Product's name : %s\n", (*(product+i)).name);
-        printf("Product's year : %d\n", (*(product+i)).manufacture_year);
-        printf("Product's manufacture : %s\n", (*(product+i)).manufacture);
-        printf("Product's price : %f\n", (*(product+i)).price);
+        printf("Product's name : %s\n", (*(productResults+i)).name);
+        printf("Product's year : %d\n", (*(productResults+i)).manufacture_year);
+        printf("Product's manufacture : %s\n", (*(productResults+i)).manufacture);
+        printf("Product's price : %f\n", (*(productResults+i)).price);
     }
 }
 int main(int argc, char * argv[]) {

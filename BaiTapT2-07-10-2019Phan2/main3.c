@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/*
 struct Product {
     char name[100];
     unsigned int manufacture_year;
@@ -44,7 +44,7 @@ void display(struct Product *product) {
     }
 }
 
-int main(int argc, char * argv[]) {
+int main3(int argc, char * argv[]) {
     //Tao menu
     printf("+--------------------------------------------------+\n");
     printf("+ 1.Input some Product  2.Sort  3.Display  4.Exit. +\n");
@@ -103,3 +103,4 @@ int main(int argc, char * argv[]) {
     }
     return 0;
 }
+*/
