@@ -8,12 +8,14 @@ struct Product {
     char manufacture[200];
 };
 int N;//bien toan cuc, co tac dung ben trong main.c
-struct Product *input(){
+//Khai bao 1 ham(function) ten la input(), gia tri tra ve la kieu struct Product*
+struct Product* input(){
     printf("Numbers of products : ");scanf("%d", &N);
-    struct Product *product = (struct Product *)malloc(N * sizeof(struct Product));
+    struct Product* product = (struct Product *)malloc(N * sizeof(struct Product));
     int i;
     for (i = 0; i < N; i++){
         printf("Product number %d :\n", i+1);
+        
     	printf("Enter product's name : \n");scanf("%s", (*(product+i)).name);
     	printf("Enter product's year : \n");scanf("%d", &((*(product+i)).manufacture_year));
     	printf("Enter product's manufacture : \n");scanf("%s", (*(product+i)).manufacture);
