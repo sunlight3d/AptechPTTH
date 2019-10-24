@@ -1,0 +1,38 @@
+/*
+CSS = Cascading Style Sheet
+*/
+body {
+    /*background-color: aquamarine; */
+}
+.congthuchoahoc {
+    color: red;
+}
+.video {
+    text-align: center;
+}
+.inputNumber{
+    height: 25px;
+    border-width: 3px;
+    border-color: red;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+.mybutton {
+    height: 31px;
+    border-radius: 8px;
+}
+#btnSum {
+    background-color: coral;
+    color: white;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+/*
+CSS = Cascading Style Sheet = tuy bien giao dien
+*/
+body {
+    background-color: pink;
+}
+.myparagraph{
+    color: red;
+    font-size: 25px;
+    background-color: wheat;
+    width: 500px;
+}
+.myinput {
+    height: 50px;
+    border-radius: 8px;
+    font-size: 23px;
+    /*padding: 0px 16px 0px 16px;*/
+    padding-left: 16px;
+    padding-right: 16px;
+    border-width: 2px;
+    display: block;
+    margin-bottom: 25px;
+}
+.mybutton{
+    height: 54px;
+    background-color:rgb(54, 177, 109);
+    color:white;
+    font-size: 20px;
+    border-radius: 8px;
+}
