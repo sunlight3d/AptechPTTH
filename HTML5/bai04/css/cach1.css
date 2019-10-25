@@ -1,0 +1,50 @@
+.w3schools {
+	font-size: 100px;
+	color: gray;
+}
+.com {
+	font-size: 100px;
+	color: green;
+}
+.logo {
+	text-align: center;
+}
+.title {
+	font-size: 26px;
+	text-transform: uppercase;
+}
+#myheader{
+	background-color: gray;
+	height: 60px;
+	
+}
+.myicon {
+	font-size: 25px;
+	color: white;
+	padding-top: 18px;
+	padding-left: 10px;
+	float: left;
+	margin-right: 10px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	background-color: red;
+}
+myicon: hover {
+	background-color: red;
+}
+.more {
+	height: 60px;
+	width: 140px;
+	background-color: black;
+	float: left;
+	margin-left: 10px;
+}
+.right {
+	height: 60px;
+	width: 100px;
+	background-color: black;
+	float: right;
+}

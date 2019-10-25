@@ -1,0 +1,49 @@
+.w3school {
+    color: gray;
+    font-size: 50px;
+}
+
+.com {
+    color: green;
+    font-size: 50px;
+}
+
+.mylogo {
+    text-align: center;
+}
+
+#navigation {
+    background-color: gray;
+    height: 60px;
+}
+
+.myicon {
+    color: white;
+    font-size: 15px;
+    /*line-height: 60px;*/
+}
+
+.mylink {
+    float: left;
+    font-size: 22px;
+    color: white;
+    height: 46px;
+    margin-left: 10px;
+    margin-right: 12px;
+    padding-top: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: uppercase;
+    /*lower case = viet thuong*/
+}
+
+.mylink:hover {
+    background-color: red;
+}
+
+.right {
+    float: right;
+    font-size: 22px;
+    margin: 15px;
+    color: white;
+}
