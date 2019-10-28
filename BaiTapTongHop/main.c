@@ -2,17 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-//You can use DevC/C++ in Windows!
-struct Book {
-    char name[220];//fields = properties
-    char publisher[250];
-    int year;
-    float price;
-};
 int N;//this is a "Global Variable"
 struct Book* input() {//this is a function
     printf("Enter number of books: "); scanf("%d", &N);
-    struct Book* book = (struct Book *)malloc(N * sizeof(struct Book));
+    struct Book *book = (struct Book *)malloc(N * sizeof(struct Book));
     int i;
     for (i = 0; i < N; i++) {
         INPUT_ONE: printf("Book number %d : \n", i+1);
@@ -43,7 +36,7 @@ void display(struct Book* book) {
     printf("+----------------------------------------------+\n");
     numberOfBooks = 0;
     for (i = 0; i < N && (book + i)->year > 0; i++) {
-        printf("|%11s", (*(book+i)).name);
+        printf("|%-11s", (*(book+i)).name);
         printf("|%-11d", (*(book+i)).year);
         printf("|%-11s", (*(book+i)).publisher);
         printf("|%-10.2f|\n", (*(book+i)).price);
@@ -220,8 +213,8 @@ LABEL2:
         case 'c':
         case 'C':
             //clear screen
-            system("cls"); //Windows
-            //system("clear");//Linux + MacOS
+            //system("cls"); //Windows
+            system("clear");//Linux + MacOS
             goto LABEL1;
             break;
         default:
