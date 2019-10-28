@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+struct Book {
+    char name[220];//fields = properties
+    char publisher[250];
+    int year;
+    float price;
+};
 int N;//this is a "Global Variable"
 struct Book* input() {//this is a function
     printf("Enter number of books: "); scanf("%d", &N);
@@ -193,9 +198,9 @@ int main(int argc, const char * argv[]) {
     //You can add multiple Labels as you like !
 LABEL2:
     printf("Do you want to continue ?\n");
-    printf("- Yes, I do. (press ‘y’, ‘Y’)\n");
-    printf("- No, I don’t. (press ‘n’, ‘N’)\n");
-    printf("- Clear the screen ! (press ‘c’, ‘C’)\n");
+    printf("- Yes, I do. (press 'y', 'Y')\n");
+    printf("- No, I don’t. (press 'n', 'N')\n");
+    printf("- Clear the screen ! (press 'c', 'C')\n");
     printf("Your choice: ");
     choice = getchar();
     while (choice == '\n') {
