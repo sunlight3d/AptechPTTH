@@ -1,0 +1,39 @@
+body{
+    background-color:#42f56f;
+}
+.main {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 14px 17px 35px -1px rgba(207,51,31,0.85);
+    -moz-box-shadow: 14px 17px 35px -1px rgba(207,51,31,0.85);
+    box-shadow: 14px 17px 35px -1px rgba(207,51,31,0.85);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+.myinput {    
+    height: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#login {
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: yellowgreen;
+    border-width: 0px;
+}
+.register{
+    margin-top: 20px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.create {
+    color: darkgreen;
+}
