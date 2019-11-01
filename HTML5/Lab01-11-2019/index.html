@@ -10,53 +10,97 @@
 </head>
 
 <body>
-    <h1>Student Management</h1>
-    <div class="studentManagement">
-        <form action="">
-        <table class="table1">
-            <tr>
-                <td>Student Name</td>
-                <td><input type="text" placeholder="Input student name"></td>
-            </tr>
-            <tr>
-                <td>Student DOB</td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>
-                    <input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
-                </td>
-            </tr>
-            <tr>
-                <td>Student Language</td>
-                <td>
-                    <input type="checkbox" name="english" value="english"> English
-                    <input type="checkbox" name="vietnamese" value="vietnamese"> Vietnamese
-                    <input type="checkbox" name="japanese" value="japanese"> Japanese
-                    <input type="checkbox" name="chinese" value="chinese"> Chinese
-                    <input type="checkbox" name="french" value="french"> French
-                </td>
-            </tr>
-            <tr>
-                <td>Student Class</td>
-                <td>
-                    <select>
-                        <option value="c1708g">C1708G</option>
-                        <option value="c1708I">C1708I</option>
-                        <option value="Cs708X">Cs708X</option>                    
-                    </select>
-                    <a href="#">Add Class</a>
-                </td>
-            </tr>            
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Add"></td>
-            </tr>
-        </table>
-    </form>
-    </div>
+    <center>
+        <div class="container">
+            <h1>Student Management</h1>
+            <div class="studentManagement">
+                <form action="">
+                    <table class="table1">
+                        <tr>
+                            <td>Student Name</td>
+                            <td><input type="text" required placeholder="Input student name"></td>
+                        </tr>
+                        <tr>
+                            <td>Student DOB</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" name="gender" value="male" checked required> Male
+                                <input type="radio" name="gender" value="female"> Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Student Language</td>
+                            <td>
+                                <input type="checkbox" name="english" value="english" checked required> English
+                                <input type="checkbox" name="vietnamese" value="vietnamese"> Vietnamese
+                                <input type="checkbox" name="japanese" value="japanese"> Japanese
+                                <input type="checkbox" name="chinese" value="chinese"> Chinese
+                                <input type="checkbox" name="french" value="french"> French
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Student Class</td>
+                            <td>
+                                <select>
+                                    <option value="c1708g" checked required>C1708G</option>
+                                    <option value="c1708I">C1708I</option>
+                                    <option value="Cs708X">Cs708X</option>
+                                </select>
+                                <a href="#">Add Class</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Add"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <h1>Student List</h1>
+            <table class="studentList">
+                <!-- tr = table row -->
+                <tr>
+                    <!-- th = Table Head -->
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Language</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <!-- td = Table Data -->
+                    <td>Nguyen Van A</td>
+                    <td>C1610L</td>
+                    <td>20/10/1990</td>
+                    <td>Male</td>
+                    <td>Vietnamese, Chinese</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <!-- td = Table Data -->
+                    <td>Nguyen Van A</td>
+                    <td>C1610L</td>
+                    <td>20/10/1990</td>
+                    <td>Male</td>
+                    <td>Vietnamese, Chinese</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <!-- td = Table Data -->
+                    <td>Nguyen Van A</td>
+                    <td>C1610L</td>
+                    <td>20/10/1990</td>
+                    <td>Male</td>
+                    <td>Vietnamese, Chinese</td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+            </table>
+        </div>
+    </center>
 </body>
 
 </html>

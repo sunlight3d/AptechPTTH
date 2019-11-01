@@ -6,11 +6,29 @@ html, body {
     margin: auto;
 }
 .table1 {
-    padding: 10px;
+    padding: 5px;
     text-align: left;
-    background-color: red;
+    margin-bottom: 20px;
 }
 .table1 td {
-    padding: 10px;
-    background-color: seagreen;
+    padding: 5px;
+}
+.container {    
+    width:98%;    
+    align-content: center;
+}
+.studentList tr, .studentList th, .studentList td {
+    border: 2px solid black;
+    font-size: 25px;    
+}
+.studentList {    
+    border-collapse: collapse;
+    width:100%;
+}
+.studentList tr {
+    text-align: left;    
+}
+.studentList th {
+    background-color: pink;
+    padding: 5px;
 }

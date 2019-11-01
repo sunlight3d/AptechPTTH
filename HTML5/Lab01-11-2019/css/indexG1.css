@@ -1,0 +1,23 @@
+.studentManagement tr, .studentManagement td{
+    text-align: left;
+    padding: 5px;
+}
+.studentList tr,.studentList th, .studentList td {
+    border: 1px solid black;
+    font-size: 20px;    
+}
+.studentList {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.studentList tr {
+    text-align: center;
+}
+.studentList th {
+    background-color: pink;
+    padding: 5px;
+}
+.mytable2 {
+    width: 97%;    
+}
