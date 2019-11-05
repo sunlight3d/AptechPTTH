@@ -1,0 +1,18 @@
+#tblSongs, th, td{
+    border-collapse: collapse;
+    font-size: 25px;
+    border: 1px solid red;
+}
+#tblSongs td {
+    padding: 7px;
+    text-align: right;
+}
+#tblSongs th {
+    height: 30px;
+    background-color: pink;
+}
+#chooseType {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 25px;
+}
