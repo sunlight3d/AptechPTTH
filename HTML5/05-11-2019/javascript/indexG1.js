@@ -3,7 +3,13 @@ var songs = [
         name: "Lai may bay",
         year: 2019,
         author: 'Binh Gold'
-    },{
+    },
+    {
+        name: "Lai may bay",
+        year: 2019,
+        author: 'Huong Ly'
+    },
+    {
         name: "Em gi oi",
         year: 2019,
         author: 'Jack & K-ICM'
@@ -24,6 +30,11 @@ var songs = [
     },{
         name: "Something abc",
         year: 2018,
+        author: 'Anyone 123'
+    }, 
+    {
+        name: "Something absdadssdsddsc",
+        year: 2017,
         author: 'Anyone 123'
     }, 
 ];
@@ -61,3 +72,10 @@ function chooseType(){
     var value = document.getElementById("chooseType").value
     alert(`You choose : ${value}`)
 }
+var analyze1 = {
+    "Binh Gold": 2,
+    "MIN": 5,
+    "abc": 1,
+    "Jack": 3,
+    "K-ICM":2,
+};
