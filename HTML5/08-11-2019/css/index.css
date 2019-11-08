@@ -1,0 +1,15 @@
+/* body { */
+    font-size: 22px;
+}
+input {
+    height: 30px;
+}
+input:required {
+    /*Neu sai thi hien mau gi ?*/
+    /* outline: 2px pink solid; */
+    /* color:red; */
+}
+input:required:valid {
+    /* background-size:10px 10px; */
+    /* background-color: yellow;; */
+}

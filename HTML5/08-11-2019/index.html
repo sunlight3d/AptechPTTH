@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="GET" autocomplete="on">
+        <table>
+            <tr>
+                <td>Name</td>
+                <!-- Regular Expression - bieu thuc chinh quy -->
+                <td><input type="text" id="name" 
+                    pattern="[a-z0-9]+"
+                    required
+                    autocomplete="on"
+                    placeholder="Enter name:" multiple></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" id="age"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="tel" id="phoneNumber"
+                    pattern="[0-9]{8,}"
+                     autofocus></td>
+            </tr>
+            <tr>
+                <td>Search</td>
+                <td><input type="search" id="searchSomething"></td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <!-- URL =Uniform Resource Locator -->
+                <td><input type="url" id="website"></td>
+            </tr>
+            <tr>
+                <td>My favorite color:</td>
+                <td><input type="color" id="color"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td>My favorite age range:</td>
+                <td><input type="range" id="range" max="1000" min="0" step="1"></td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>Week:</td>
+                <td><input type="week" id="week"></td>
+            </tr>
+            <tr>
+                <td>Time:</td>
+                <td><input type="time" id="time"></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><label for="description">Desc: </label>
+                    <textarea name="description" cols="100" rows="10">
+
+                    </textarea></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Login</button></td>
+            </tr>
+        </table>        
+    </form>
+</body>
+</html>
