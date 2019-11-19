@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="./javascript/indexG2.js"></script>
+    <link rel="stylesheet" href="./css/indexG2.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <b>facebook</b>
+        </div>
+        <div class="inputTable">
+            <table id="table1">
+                <tr>
+                    <td>Email hoặc điện thoại</td>
+                    <td>Mật khẩu</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="email" 
+                        placeholder="Enter your email"
+                        id="email"></td>
+                    <td><input type="password" name="password" id="password"></td>
+                    <td><input type="submit" value="Đăng nhập" id="login"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Quên tài khoản?</td>
+                    <td></td>
+                </tr>
+            </table>            
+        </div>        
+    </div>
+    <table class="table2">
+        <tr>
+            <td>
+                <div>
+                    <p>Facebook giúp bạn kết nối chia sẻ</p>
+                    <img src="./images/dog.jpg" alt="">
+                </div>
+            </td>
+            <td>
+                <div>
+                
+                
+                    <table id="table3">
+                        <tr>
+                                <td><strong style="font-size: 2.25em;">Đăng ký</strong> </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <strong style="font-weight: normal; font-size: 1.3em;">
+                                Nhanh chóng và dễ dàng</strong> 
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td><input class="input2" type="text" placeholder="Họ" 
+                                required id="firstName" style="width: 100%;">
+                            </td>
+                            <td>
+                                <input class="input2" type="text" placeholder="Tên" 
+                                required id="lastName"  style="width: 100%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input class="input2" type="text" style="width:100%;" placeholder="Số di động hoặc email" required id="phoneOrEmail">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input class="input2" type="text" style="width:100%;" placeholder="Mật khẩu mới" required id="newPassword">
+                            </td>
+                        </tr>
+                
+                    </table>
+                    <p>Ngày sinh</p>
+                    <select id="selectDay"></select> 
+                    <script>
+                        const selectDay = document.getElementById("selectDay")
+                        for (let i = 1; i <= 31; i++) {                            
+                            const option = document.createElement('option')
+                            option.innerHTML = `${i}`;
+                            selectDay.appendChild(option);
+                        }
+                        
+                    </script>
+                    <select id="selectMonth"></select> 
+                    <script>
+                        const selectMonth = document.getElementById("selectMonth")
+                        for (let i = 1; i <= 12; i++) {                            
+                            const option = document.createElement('option')
+                            option.innerHTML = `Tháng ${i}`;
+                            selectMonth.appendChild(option);
+                        }
+                        
+                    </script>
+                    <select id="selectYear"></select> 
+                    <script>
+                        const selectYear = document.getElementById("selectYear")
+                        for (let i = 1900; i <= 2050; i++) {                            
+                            const option = document.createElement('option')
+                            option.innerHTML = `${i}`;
+                            selectYear.appendChild(option);
+                        }
+                        
+                    </script>
+                    <i class="far fa-question-circle" style="opacity: 0.5;"></i>
+                    <div class="render">
+                            <input type="radio" name="gender" value="male"> Nam
+                            <input type="radio" name="gender" value="female"> Nữ
+                            <input type="radio" name="gender" value="other"> Tùy chỉnh
+                    </div>
+                    <p style="text-align: left; width: 300px;">
+                        Bằng cách nhấp vào <a href="">Điều khoản chính sách</a>của chúng tôi. Bạn có thể..Bạn có thể..Bạn có thể..Bạn có thể..Bạn có thể..Bạn có thể..Bạn có thể..Bạn có thể...</p>
+                    <button id="register">
+                        Đăng ký
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
