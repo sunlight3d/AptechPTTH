@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./css/indexG1.css">
 
     <title>Document</title>
@@ -82,23 +83,75 @@
                         </tr>
                     <tr>
                         <td colspan="2">
-                            <span><input type="number" value=""></span>
-                            <select id="selectMonth">
-                                
-                                    
-                                
-                            </select> 
+
+                            <select id="selectDay"></select> 
+                            <script>
+                                var selectDay = document.getElementById("selectDay")                    
+                                for(let i = 1; i <= 31; i++){                                    
+                                    var opt = document.createElement('option');
+                                    opt.innerHTML = `Ngày ${i}`
+                                    selectDay.appendChild(opt);
+                                }                        
+                            </script>
+                            <select id="selectMonth"></select> 
+                            <script>
+                                var selectMonth = document.getElementById("selectMonth")                    
+                                for(let i = 1; i <= 12; i++){                                    
+                                    var opt = document.createElement('option');
+                                    opt.innerHTML = `Tháng ${i}`
+                                    selectMonth.appendChild(opt);
+                                }                        
+                            </script>
+                            <select id="selectYear"></select> 
+                            <script>
+                                var selectYear = document.getElementById("selectYear")                    
+                                for(let i = 1900; i <= 2050; i++){                                    
+                                    var opt = document.createElement('option');
+                                    opt.innerHTML = `${i}`
+                                    selectYear.appendChild(opt);
+                                }                        
+                            </script>
+                            <i class="fas fa-question-circle"></i><br>
+                            <strong style="opacity: 0.7;">Ngay sinh</strong>
+                            <div>
+                                <input type="radio" name="gender" value="male">Nam
+                                <input type="radio" name="gender" value="female">Nữ
+                                <input type="radio" name="gender" id="gender" value="other">Tùy chọn
+                            </div>
+                            <div id="expandedView" style="background-color: red; height: 100px;display: none;">
+
+                            </div>
                             <script>
                                 
-                                for(let i = 1; i <= 12; i++){
-
+                                
+                                var radioGenders = document.getElementByName("gender")
+                                var expandedView = document.getElementById("expandedView")
+                                debugger
+                                for(radioGender in radioGenders) {
+                                        radioGender.onclick = (event) => {
+                                            debugger
+                                        // alert("ddd")
+                                        if(radioGender.value === "other") {
+                                            expandedView.style.display = "block";
+                                        } else {
+                                            expandedView.style.display = "none";
+                                        }
+                                        
+                                    }
                                 }
-                                    var selectMonth = document.getElementById("selectMonth")
-                                    var opt = document.createElement('option');
-                                        opt.value = "sssss";
-                                        opt.innerHTML = "jijiji";
-                                        selectMonth.appendChild(opt);
-                                </script>
+                                
+                                
+                            </script>
+                            
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td colspan="2">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: red; padding: 0px;">
                             
                         </td>
                     </tr>
