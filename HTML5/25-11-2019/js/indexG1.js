@@ -1,4 +1,5 @@
 var currentIndex = 0
+var totalStudents = 0
 function getStudentInfo() {
     var name = document.getElementById("name").value
     var dob = document.getElementById("dob").value
@@ -56,6 +57,9 @@ function insertToStudentTable(student) {
     var cell5 = row.insertCell(5)
     cell5.innerHTML = `<button style="text-decoration: underline; decoration: none;"
             onclick='deleteStudent("${row.id}")'>Delete</button>`
+    totalStudents++;
+    var countStudent = document.getElementById("countStudent")
+    countStudent.innerText = totalStudents
 }
 function deleteStudent(timestamp) {
     var yesOrNo = confirm("Do you want to delete ?")
@@ -67,8 +71,33 @@ function deleteStudent(timestamp) {
             // debugger
             if(rows[i].id === timestamp) {
                 studentTable.deleteRow(i)
+                totalStudents = totalStudents > 0 ? totalStudents - 1 : totalStudents
+                var countStudent = document.getElementById("countStudent")
+                countStudent.innerHTML = totalStudents
             }
         }
         currentIndex--
+    }
+}
+var classNames = ["C1798G1", "C135G2"]
+function addNewClass() {
+    var newClassName = prompt("Enter your new class name: ", "")
+    if(newClassName.trim() === "") {
+        alert("Cannot insert a blank name !")
+        return
+    }
+    classNames.push(newClassName)
+    var className = document.getElementById("className")
+    var option = document.createElement("option")
+    option.innerHTML = newClassName
+    className.add(option)
+}
+function reloadClassNames() {
+    var className = document.getElementById("className")
+    for (var i = 0; i < classNames.length; i++) {
+        var eachClass = classNames[i]
+        var option = document.createElement("option")
+        option.innerHTML = eachClass
+        className.add(option)
     }
 }

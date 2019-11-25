@@ -55,11 +55,13 @@
             </td>
             <td>
                 <select id="className">
-                    <option value="C1908G1">C1908G1</option>
-                    <option value="C1908G2">C1908G2</option>
-                    <option value="C1908G3">C1908G3</option>
+                   
                 </select>
-            </td>
+                <script>
+                    reloadClassNames()                
+                </script>
+                <button onclick="addNewClass()">Add Class</button>
+            </td>            
         </tr>
         <tr>
             <td>
@@ -84,5 +86,6 @@
         </tr>
     
     </table>
+    <p style="text-align: right;">Total students: <span id="countStudent">0</span></p>
 </body>
 </html>
