@@ -49,7 +49,7 @@ function insertToStudentTable(student) {
     cell2.innerHTML = student.dob
 
     var cell3 = row.insertCell(3)
-    cell3.innerHTMLinnerHTML = student.gender
+    cell3.innerHTML = student.gender
 
     var cell4 = row.insertCell(4)
     cell4.innerHTML = student.checkedLanguages
