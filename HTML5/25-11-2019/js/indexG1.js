@@ -71,7 +71,8 @@ function deleteStudent(timestamp) {
             // debugger
             if(rows[i].id === timestamp) {
                 studentTable.deleteRow(i)
-                totalStudents = totalStudents > 0 ? totalStudents - 1 : totalStudents
+                //totalStudents = totalStudents > 0 ? totalStudents - 1 : totalStudents
+                totalStudents--
                 var countStudent = document.getElementById("countStudent")
                 countStudent.innerHTML = totalStudents
             }
